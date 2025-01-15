@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="container1">
+        <nav>
+            <div class="logo">folio<b>.</b></div>
+            <ul class="navItems">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+
+
+            </ul>
+            <div class="links">
+                <a href="https://www.facebook.com/share/18XxWdnDzg/" target="_blank">
+                    <img src="facebook.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/shreejan-shrestha-6370522b8/" target="_blank">
+                    <img src="linkedin.png" alt="LinkedIn" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/op_shreejan/" target="_blank">
+                    <img src="instagram.png" alt="Instagram" class="social-icon">
+                </a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+
+
+        </nav>
+
+        <div class="wrapper">
+            <div class="wrapper1"></div>
+            <div class="wrapper2"></div>
+            <div class="cols cols0">
+                <span class="topline">Hello ¬</span>
+                <h1>I'm <span class="multiText">UI Designer</span></h1>
+                <p>I’m a passionate designer and student dedicated to creating user-friendly and visually appealing
+                    designs. I focus on blending aesthetics with functionality to craft intuitive and engaging user
+                    experiences. Constantly learning and growing, I aim to turn creative challenges into effective
+                    design solutions.
+                </p>
+                <div class="btns">
+                    <button><a href="shreejan_CV_webdesigner.pdf">Download CV</a></button>
+                    <button>Hire Me</button>
+                </div>
+            </div>
+            <div class="cols cols1">
+                <div class="imgbox">
+                    <img src="splash.png" alt="Splash Image" id="splash">
+                    <img src="profile.gif" alt="Hello GIF">
+
+                </div>
+            </div>
+        </div>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <!-- Frontend Skills -->
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <ul>
+                        <li data-icon="&#xf13b;">HTML & CSS</li>
+                        <li data-icon="&#xf3b8;">JavaScript</li>
+                        <li data-icon="&#xf121;">React</li>
+                    </ul>
+                </div>
+                <!-- Design Skills -->
+                <div class="skill-category">
+                    <h3>Design</h3>
+                    <ul>
+                        <li data-icon="&#xf1fc;">UI/UX Design</li>
+                        <li data-icon="&#xf03e;">Graphic Design</li>
+                        <li data-icon="&#xf040;">Figma</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <!-- Project 1 -->
+                <div>
+                    <img src="cv.png" alt="Portfolio Website">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive portfolio showcasing my work and experience.</p>
+                    <div class="btn-group">
+                        <a href="https://github.com/yourusername/portfolio" target="_blank">View Code</a>
+                        <a href="https://shreejanstha.com.np" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div>
+                    <img src="landing-page.png" alt="Weather App">
+                    <h3>Weather App</h3>
+                    <p>An application that displays real-time weather information.</p>
+                    <div class="btn-group">
+                        <a href="https://github.com/yourusername/weather-app" target="_blank">View Code</a>
+                        <a href="https://yourweatherapp.com" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+                <div>
+                    <img src="calculator.png" alt="Calculator">
+                    <h3>Calculater</h3>
+                    <p>An application that works as calculator created using html css JavaScript.</p>
+                    <div class="btn-group">
+                        <a href="https://github.com/yourusername/weather-app" target="_blank">View Code</a>
+                        <a href="https://yourweatherapp.com" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form action="/submit" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong>
+                        <a href="mailto:shresthashreejan20@gmail.com">shresthashreejan20@gmail.com</a>
+                    </p>
+                    <p><i class="fas fa-phone"></i> <strong>Phone:</strong>
+                        <a href="tel:+9803509224">9803509224</a>
+                    </p>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong>
+                        Samakhusi, Kathmandu</p>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Your Name - All Rights Reserved.<a href="#top" class="back-to-top">Back to Top</a></p>
+
+        </div>
+    </footer>
+
+
+
+
+
+    </div>
+    <script>
+        const textElement = document.querySelector('.multiText');
+        const texts = ["UI Designer", "Student", "Web Designer"];
+        let currentIndex = 0;
+
+        function showNextText() {
+            // Update the text content
+            textElement.style.opacity = 0; // Fade out
+            setTimeout(() => {
+                currentIndex = (currentIndex + 1) % texts.length;
+                textElement.textContent = texts[currentIndex];
+                textElement.style.opacity = 1; // Fade in
+            }, 500); // Delay matches the CSS transition duration
+        }
+
+        // Change text every 3 seconds
+        setInterval(showNextText, 2500);
+    </script>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".navItems").classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>
