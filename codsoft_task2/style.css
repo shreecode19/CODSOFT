@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #ffb06b, #ff7eff);
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: #ff6600;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #000000;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  background-image: url(pexels-sanaan-3116969.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+/* Shoe Container
+.shoe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 1;
+}
+
+/* Shoe Image 
+.shoe-image {
+  max-width: 400px;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+  Smooth transition 
+} */
+
+/* Hero Text Section */
+.hero {
+  position: relative;
+  z-index: 3;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ff6600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* .hero-content:hover .shoe .shoe-image {
+  transform: rotate(38deg);
+} */
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.features .feature {
+  text-align: center;
+  max-width: 300px;
+}
+
+.features .feature img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+/* Product Section */
+.products {
+  padding: 50px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #f3f4f6, #e2e8f0);
+}
+
+.products h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #2d3748;
+  text-transform: uppercase;
+}
+
+/* Product Grid */
+.products .product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Product Card */
+.products .product {
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 15px;
+  background: linear-gradient(135deg, #ffffff, #edf2f7);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.products .product img {
+  max-width: 100%;
+  border-radius: 10px;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.products .product h4 {
+  margin: 15px 0;
+  font-size: 1.25rem;
+  color: #2d3748;
+}
+
+.products .product p {
+  font-size: 1.1rem;
+  color: #4a5568;
+}
+
+/* Buttons */
+.products .product button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effects */
+.products .product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #ffc5a6, #ffb7b7);
+}
+
+.products .product:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.products .product button:hover {
+  background: linear-gradient(135deg, #764ba2, #667eea);
+  transform: scale(1.1);
+}
+
+/* Add Colorful Border Accents */
+.products .product:nth-child(1) {
+  border-color: #000000;
+}
+
+.products .product:nth-child(2) {
+  border-color: #000000;
+}
+
+.products .product:nth-child(3) {
+  border-color: #000000;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer .social-icons {
+  margin: 10px 0;
+}
+
+footer .social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
